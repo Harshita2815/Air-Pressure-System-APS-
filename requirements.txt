@@ -1,5 +1,8 @@
 pandas 
 numpy
 seaborn
-pymongo==4.2.0
+scikit-learn
+pymongo
+pymongo[srv]==4.2.0
+python-dotenv
 -e .
