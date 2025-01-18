@@ -1,10 +1,12 @@
+
 import yaml
 import pandas as pd
 import numpy as np
 import os
 import dill
 import sys
-from src.exception import CustomException
+from sensor.exception import SensorException
+
 
 def read_yaml_file(file_path:str)->dict:
     try:
@@ -14,7 +16,9 @@ def read_yaml_file(file_path:str)->dict:
         
 
     except Exception as e:
-        raise CustomException(e,sys)
+        raise SensorException(e,sys)
+    
+
 
 def write_yaml_file(file_path: str, content: object, replace: bool = False) -> None:
     try:
@@ -26,4 +30,7 @@ def write_yaml_file(file_path: str, content: object, replace: bool = False) -> N
             yaml.dump(content, file)
 
     except Exception as e:
-        raise CustomException(e, sys)
+        raise SensorException(e, sys)
+
+
+

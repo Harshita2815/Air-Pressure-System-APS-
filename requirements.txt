@@ -1,12 +1,10 @@
-pandas 
+pymongo[srv]==4.2.0
+pandas
 numpy
-seaborn
 scikit-learn
 pymongo
-pymongo[srv]==4.2.0
 python-dotenv
 PyYAML
 dill
 
-
--e .
+-e .   #editable mode 

@@ -1,9 +1,9 @@
 from dotenv import load_dotenv
 import pymongo
-from src.constant.database import DATABASE_NAME
+from sensor.constant.database import DATABASE_NAME
 import certifi
 ca = certifi.where()
-from src.constant.env_variable import MONGODB_URL_KEY
+from sensor.constant.env_variable import MONGODB_URL_KEY
 import os 
 import logging 
 
@@ -28,4 +28,5 @@ class MongoDBClient:
         except Exception as e:
             logging.error(f"Error initializing MongoDB client: {e}")
             raise
+
 

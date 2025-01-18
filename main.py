@@ -1,14 +1,11 @@
-
-
-
-from src.configuration.mongo_db_connection import MongoDBClient
-from src.exception import CustomException
+from sensor.configuration.mongo_db_connection import MongoDBClient
+from sensor.exception import SensorException
 import os , sys
-from src.logger import logging
+from sensor.logger import logging
 #from  sensor.utils import dump_csv_file_to_mongodb_collecton
 #from sensor.entity.config_entity  import TrainingPipelineConfig,DataIngestionConfig
 
-from src.pipeline.training_pipeline import TrainPipeline
+from sensor.pipeline.training_pipeline import TrainPipeline
 
 # def test_exception():
 #     try:
@@ -28,4 +25,3 @@ if __name__ == "__main__":
 
     training_pipeline = TrainPipeline()
     training_pipeline.run_pipeline()
-
