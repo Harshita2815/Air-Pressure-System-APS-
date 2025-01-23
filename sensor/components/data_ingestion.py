@@ -9,7 +9,8 @@ from sensor.entity.artifact_entity import DataIngestionArtifact
 from sensor.data_access.sensor_data import SensorData
 from sklearn.model_selection import train_test_split
 
-from sensor.utils.main_utils import read_yaml_file
+from sensor.utils.main_utils import read_yaml_file  
+
 from sensor.constant.training_pipeline import SCHEMA_FILE_PATH
 
 
@@ -98,3 +99,4 @@ class DataIngestion:
         
         except Exception as e:
             raise SensorException(e,sys)
+

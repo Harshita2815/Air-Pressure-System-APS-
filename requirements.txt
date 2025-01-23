@@ -6,5 +6,7 @@ pymongo
 python-dotenv
 PyYAML
 dill
-
--e .   #editable mode 
+scipy
+imblearn==0.0
+xgboost==1.6.2
+-e .  #editable mode : when we make setup we have find packages function that has to be ran several time to find package due to detection of init in order to not run setup again again .e trigeers the setup.py by itself

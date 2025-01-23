@@ -36,7 +36,8 @@ class SensorData:
             return len(records)
         except Exception as e:
             raise SensorException(e, sys)
-        
+
+
     def export_collection_as_dataframe(
         self, collection_name: str, database_name: Optional[str] = None) -> pd.DataFrame:
         try:
@@ -60,9 +61,6 @@ class SensorData:
 
         except Exception as e:
             raise SensorException(e, sys)
-
-
-
 
 
 

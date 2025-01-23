@@ -29,4 +29,3 @@ class MongoDBClient:
             logging.error(f"Error initializing MongoDB client: {e}")
             raise
 
-
