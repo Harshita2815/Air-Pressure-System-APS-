@@ -170,3 +170,4 @@ model.pkl
 # PyPI configuration file
 .pypirc
 artifact/
+.env
